@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.background{
+  position: fixed;
+  z-index: -1;
+  top: -50px;
+}
+body {
+  background: url(Background.png);
+}
+.head img {
+  width: 100%;
+}
+.head {
+ 
+  margin-bottom: -20px;
+  position: fixed;
+  top: -2px;
+  width: 100%;
+  z-index: 3;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 0%;
+}
+.explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explore img{
+   width: 80%; 
+}
+.city {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 0.7fr);
+  margin-left: 20px;
+  background: #eaffe8;
+  padding: 20px 40px;
+  border-radius: 10px;
+  
+}
+.cities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  
+}
+.cities a
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cities img {
+  border-radius: 50%;
+  gap: 40px;
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  justify-content: center;
+}
+.cities img:hover {
+  border-radius: 50%;
+  gap: 40px;
+  width: 100px;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+.cities h1 {
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  cursor: pointer;
+ text-decoration: none;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+#myAside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background: #ccf6c8;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#myAside .logo {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+#myAside .logo img {
+  width: 250px;
+  z-index: 78;
+}
+
+#myAside nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#myAside nav li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  justify-content: center;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+#myAside nav li:hover {
+  color: #000;
+}
+
+#myAside nav img {
+  width: 20px;
+}
+
+#myAside footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #888;
+  font-size: 12px;
+  top: 110px;
+  position: relative;
+}
+
+
+.search-bar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 220px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  position: fixed;
+  z-index: 20;
+  border: 0;
+  padding-left: 35px;
+}
+
+.search-bar input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  padding: 0 5px;
+  outline: none;
+}
+
+.search-bar button {
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+
+.search-bar button img {
+  width: 15px;
+  height: 15px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 300px; /* adjust to your desired width */
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.search-container img {
+  width: 5px;
+  height: 5px;
+  padding: 0 20px;
+}
+
+.search-container input[type="text"] {
+  flex: 1;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+.aside-list {
+  margin: 30px 0;
+}
+
+.aside-list h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.aside-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aside-list li {
+  margin-bottom: 5px;
+}
+
+.aside-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.aside-list a:hover {
+  color: #0066cc;
+}
+.aside-list img {
+  width: 20px;
+}
+.aside-list ul a {
+  padding-top: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.cities a{
+  text-decoration:none;
+}

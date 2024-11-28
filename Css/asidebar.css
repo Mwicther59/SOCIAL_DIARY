@@ -1,0 +1,144 @@
+#myAside footer {
+    top: 110px;
+    }
+    .Btn {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+width: 45px;
+height: 45px;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+transition-duration: .3s;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+background-color: rgb(255, 65, 65);
+}
+
+/* plus sign */
+.sign {
+width: 100%;
+transition-duration: .3s;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.sign svg {
+width: 17px;
+}
+
+.sign svg path {
+fill: white;
+}
+/* text */
+.text {
+position: absolute;
+right: 0%;
+width: 0%;
+opacity: 0;
+color: white;
+font-size: 1.2em;
+font-weight: 600;
+transition-duration: .3s;
+}
+.text a{
+text-decoration: none;
+}
+/* hover effect on button width */
+.Btn:hover {
+width: 125px;
+border-radius: 40px;
+transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+width: 30%;
+transition-duration: .3s;
+padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+opacity: 1;
+width: 70%;
+transition-duration: .3s;
+padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+transform: translate(2px ,2px);
+}
+
+.button {
+--color: #00A97F;
+padding: 0.8em 1.7em;
+background-color: transparent;
+border-radius: .3em;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+transition: .5s;
+font-weight: 400;
+font-size: 17px;
+border: 1px solid;
+font-family: inherit;
+text-transform: uppercase;
+color: var(--color);
+z-index: 1;
+}
+
+.button::before, .button::after {
+content: '';
+display: block;
+width: 50px;
+height: 50px;
+transform: translate(-50%, -50%);
+position: absolute;
+border-radius: 50%;
+z-index: -1;
+background-color: var(--color);
+transition: 1s ease;
+}
+
+.button::before {
+top: -1em;
+left: -1em;
+}
+
+.button::after {
+left: calc(100% + 1em);
+top: calc(100% + 1em);
+}
+
+.button:hover::before, .button:hover::after {
+height: 410px;
+width: 410px;
+}
+
+.button:hover {
+color: rgb(10, 25, 30);
+}
+
+.button:active {
+filter: brightness(.8);
+}
+.button a{
+text-decoration: none;
+color: black;
+}
+
+#logout 
+{
+    text-decoration: none;
+}
+.comment-name
+{
+    padding: 10px 10px;
+}
+.comment-icon span
+{
+    font-size: x-large;
+    margin-left: 10px;
+}

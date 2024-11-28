@@ -1,0 +1,109 @@
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  /* POST */
+  .background{
+    position: fixed;
+    z-index: -1;
+    top: -50px;
+  }
+  .post {
+      position: relative;
+        background: #EAFFE8;
+        border-radius: 10px;
+        padding: 20px;
+        width: 900px;
+        margin-left: 250px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .videos{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.1rem 0.2rem;
+      margin-top: 20px;
+    }
+    .videos img
+    {
+      max-height: 50rem;
+      max-width: 50rem;
+      margin: 50px;
+    }
+    .icons{
+        display: flex;
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+    .share {    
+        padding: 12px;
+    cursor: pointer;
+    }
+    .posted{
+        position: absolute;
+        right: 2em;
+    }
+    /* COMMENTS */
+    .comment-post-head{
+      display: flex;
+      flex-direction: row;
+    }
+    .comment-name{
+        margin-left: 20px;
+    }
+    .comment-name h1,.comment-name p{
+        font-size: 20px;
+    }
+    #outer-comment{
+      display: block;
+        padding: 10px;
+    }
+    /* SUB_COMMENT */
+    .sub-comment{
+        position: relative;
+        left: 5em;
+        width: 700px;
+        display: flex;
+    }
+    .sub-comment-name{
+        width: 35em;
+        margin-left: 20px;
+    }
+    .sub-comment-name h1,.sub-comment-name p{
+        font-size: 15px;
+    }
+    /* LIKE */
+    #like-button {
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    #like-count {
+        padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.comment{
+  cursor: pointer;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: -10px;
+}
+.share-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#thecomment{
+  cursor: pointer;
+}
+.displaynone{
+  display: none;
+}
+.icons a{
+  text-decoration: none;
+}
